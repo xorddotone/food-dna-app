@@ -27,6 +27,8 @@ import {Event} from './org.hyperledger.composer.system';
    }
    export class Importer extends Business {
    }
+   export class History extends Business {
+   }
    export class transferProduct extends Transaction {
       product: Product;
       newOwner: Business;

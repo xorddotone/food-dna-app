@@ -23,6 +23,8 @@ import { GrowerComponent } from './Grower/Grower.component';
 import { ShipperComponent } from './Shipper/Shipper.component';
 import { ImporterComponent } from './Importer/Importer.component';
 
+import { HistoryComponent } from './History/History.component';
+
 import { transferProductComponent } from './transferProduct/transferProduct.component';
 import { SetupDemoComponent } from './SetupDemo/SetupDemo.component';
 
@@ -32,6 +34,7 @@ const routes: Routes = [
   { path: 'Grower', component: GrowerComponent },
   { path: 'Shipper', component: ShipperComponent },
   { path: 'Importer', component: ImporterComponent },
+  { path: 'History', component: HistoryComponent },
   { path: 'transferProduct', component: transferProductComponent },
   { path: 'SetupDemo', component: SetupDemoComponent },
   { path: '**', redirectTo: '' }

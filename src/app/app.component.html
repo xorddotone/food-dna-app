@@ -12,44 +12,48 @@
  limitations under the License.
 -->
 <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <p class="network-name">food-dna@0.2.6-deploy.4.bna</p>
-        <p class="navbar-brand">angular-app</p>
-      </div>
-      <ul class="nav navbar-nav">
-        <li class="dropdown active">
-            <a class="dropdown-toggle" data-toggle="dropdown">Assets</a>
-            <ul class="dropdown-menu scrollable-menu">
-              
-              <li><a [routerLink]="['/Product']">Product</a></li>
-              
-            </ul>
-        </li>
-        <li class="dropdown active">
-          <a class="dropdown-toggle" data-toggle="dropdown">Participants</a>
-          <ul class="dropdown-menu scrollable-menu">
-            
-            <li><a [routerLink]="['/Grower']">Grower</a></li>
-            
-            <li><a [routerLink]="['/Shipper']">Shipper</a></li>
-            
-            <li><a [routerLink]="['/Importer']">Importer</a></li>
-            
-          </ul>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <p class="network-name">food-dna@0.2.6-deploy.4.bna</p>
+      <p class="navbar-brand">angular-app</p>
+        <img src="/asset/food-dna.png" alt="Food DNA" width="200" height="80">
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown active">
+        <a class="dropdown-toggle" data-toggle="dropdown">Assets</a>
+        <ul class="dropdown-menu scrollable-menu">
+
+          <li><a [routerLink]="['/Product']">Product</a></li>
+
+        </ul>
       </li>
+      <li class="dropdown active">
+        <a class="dropdown-toggle" data-toggle="dropdown">Participants</a>
+        <ul class="dropdown-menu scrollable-menu">
+
+          <li><a [routerLink]="['/Grower']">Grower</a></li>
+
+          <li><a [routerLink]="['/Shipper']">Shipper</a></li>
+
+          <li><a [routerLink]="['/Importer']">Importer</a></li>
+
+        </ul>
+      </li>
+
+      <li><a [routerLink]="['/History']">History</a></li>
+
       <li class="dropdown active">
         <a class="dropdown-toggle" data-toggle="dropdown">Transactions</a>
         <ul class="dropdown-menu scrollable-menu">
-          
+
           <li><a [routerLink]="['/transferProduct']">transferProduct</a></li>
-          
+
           <li><a [routerLink]="['/SetupDemo']">SetupDemo</a></li>
-          
+
         </ul>
-    </li>
-      </ul>
-    </div>
-  </nav>
-  
-  <router-outlet></router-outlet>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

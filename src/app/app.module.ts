@@ -27,6 +27,8 @@ import { GrowerComponent } from './Grower/Grower.component';
 import { ShipperComponent } from './Shipper/Shipper.component';
 import { ImporterComponent } from './Importer/Importer.component';
 
+import { HistoryComponent } from './History/History.component';
+
 import { transferProductComponent } from './transferProduct/transferProduct.component';
 import { SetupDemoComponent } from './SetupDemo/SetupDemo.component';
 
@@ -38,6 +40,7 @@ import { SetupDemoComponent } from './SetupDemo/SetupDemo.component';
     GrowerComponent,
     ShipperComponent,
     ImporterComponent,
+    HistoryComponent,
     transferProductComponent,
     SetupDemoComponent
   ],
