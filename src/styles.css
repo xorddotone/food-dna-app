@@ -12,3 +12,12 @@
  * limitations under the License.
  */
 /* You can add global styles to this file, and also import other style files */
+.logo{
+    
+    height: 50px;
+    /* padding: 10px; */
+    display: block;
+    margin: 0 auto;
+    background:url('app/asset/images/fooddna.png') no-repeat;
+
+}
