@@ -112,7 +112,7 @@ export class ShipperComponent implements OnInit {
       'city': this.city.value,
       'postalCode': this.postalCode.value,
       'country': this.country.value,
-      'referencePerson': this.referencePerson.value
+      'referencePerson': 'resource:com.food.dna.Business#' + this.referencePerson.value
     };
 
     this.myForm.setValue({
