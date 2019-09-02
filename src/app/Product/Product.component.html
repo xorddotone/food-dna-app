@@ -87,7 +87,7 @@
 
             
               <div class="form-group text-left">
-                <label for="owner">owner</label>
+                <label for="owner">Owner Email</label>
                 
                     <textarea formControlName="owner" class="form-control" rows="3"></textarea>
                 
@@ -105,100 +105,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-<div class="modal fade" id="updateAssetModal" tabindex="-1" role="dialog" aria-labelledby="updateAssetModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="updateAssetModalLabel">Update Asset</h4>
-      </div>
-      <form [formGroup]="myForm">
-        <div class="modal-body">
-
-
-          
-            <div class="form-group text-left">
-              <label for="referenceNumber">referenceNumber</label>
-              
-              
-                <input [ngModel]="referenceNumber" formControlName="referenceNumber" class="form-control" disabled="disabled">  
-              
-
-            </div>
-          
-            <div class="form-group text-left">
-              <label for="type">type</label>
-              
-              
-                <input [ngModel]="type"formControlName="type" type="text" class="form-control">
-              
-
-            </div>
-          
-            <div class="form-group text-left">
-              <label for="quantity">quantity</label>
-              
-              
-                <input [ngModel]="quantity" formControlName="quantity" type="number" class="form-control">
-              
-
-            </div>
-          
-            <div class="form-group text-left">
-              <label for="productionDate">productionDate</label>
-              
-              
-                <input [ngModel]="productionDate" formControlName="productionDate" type="number" class="form-control">
-              
-
-            </div>
-          
-            <div class="form-group text-left">
-              <label for="expirationDate">expirationDate</label>
-              
-              
-                <input [ngModel]="expirationDate" formControlName="expirationDate" type="number" class="form-control">
-              
-
-            </div>
-          
-            <div class="form-group text-left">
-              <label for="foodDna">foodDna</label>
-              
-              
-                <input [ngModel]="foodDna" formControlName="foodDna" type="number" class="form-control">
-              
-
-            </div>
-          
-            <div class="form-group text-left">
-              <label for="owner">owner</label>
-              
-              
-                
-                  <textarea [ngModel]="owner" formControlName="owner" class="form-control" rows="3"></textarea>
-                
-              
-
-            </div>
-          
-
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button (click)="updateAsset(myForm)" type="submit" class="btn btn-success" data-dismiss="modal">Submit</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-
 
 <div class="modal fade" id="deleteAssetModal" tabindex="-1" role="dialog" aria-labelledby="deleteAssetModalLabel">
   <div class="modal-dialog" role="document">
@@ -219,16 +125,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
 
 <div class="container">
 	<div *ngIf="errorMessage" class="alert alert-danger" role="alert">
@@ -293,18 +189,6 @@
                 <td class="asset-properties">{{asset.owner}}</td>
             
             <td>
-              <button (click)="getForm(asset.referenceNumber);" type="button" class="btn btn-update" data-toggle="modal" data-target="#updateAssetModal">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  width="12.8px" height="12.8px" viewBox="0 0 30.7 30.7" style="enable-background:new 0 0 30.7 30.7;" xml:space="preserve">
-               <g>
-                 <path d="M1.5,30.7c0.1,0,0.2,0,0.4,0l5.9-1.5c0.8-0.2,1.3-1,1.1-1.8c-0.2-0.8-1-1.3-1.8-1.1l-3.6,0.9l0.8-3.8
-                   c0.2-0.8-0.4-1.6-1.2-1.8c-0.8-0.2-1.6,0.4-1.8,1.2L0,28.9c-0.1,0.5,0.1,1,0.4,1.4C0.7,30.6,1.1,30.7,1.5,30.7z"/>
-                 <path d="M10.4,25.2c0.3,0.3,0.7,0.4,1.1,0.4c0.4,0,0.8-0.1,1.1-0.4L30.3,7.5c0.6-0.6,0.6-1.5,0-2.1l-4.9-4.9
-                   C25.1,0.2,24.7,0,24.3,0c-0.4,0-0.8,0.2-1.1,0.4L5.5,18.2c-0.3,0.3-0.4,0.7-0.4,1.1s0.2,0.8,0.4,1.1L10.4,25.2z M24.3,3.6l2.8,2.8
-                   L11.5,22l-2.8-2.8L24.3,3.6z"/>
-               </g>
-               </svg>
-              </button>
 
               <button (click)="setId(asset.referenceNumber);" type="button" class="btn btn-delete" data-toggle="modal" data-target="#deleteAssetModal">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

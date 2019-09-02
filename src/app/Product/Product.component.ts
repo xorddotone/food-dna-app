@@ -112,7 +112,8 @@ export class ProductComponent implements OnInit {
       'productionDate': this.productionDate.value,
       'expirationDate': this.expirationDate.value,
       'foodDna': this.foodDna.value,
-      'owner': this.owner.value
+      'owner': 'resource:com.food.dna.Business#' + this.owner.value,
+      // 'ownerEmail': this.owner.value
     };
 
     this.myForm.setValue({
@@ -158,7 +159,7 @@ export class ProductComponent implements OnInit {
       'productionDate': this.productionDate.value,
       'expirationDate': this.expirationDate.value,
       'foodDna': this.foodDna.value,
-      'owner': this.owner.value
+      'owner': 'resource:com.food.dna.Business#' + this.owner.value
     };
 
     return this.serviceProduct.updateAsset(form.get('referenceNumber').value, this.asset)
