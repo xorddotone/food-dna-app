@@ -101,8 +101,8 @@ export class transferProductComponent implements OnInit {
   addTransaction(form: any): Promise<any> {
     this.Transaction = {
       $class: 'com.food.dna.transferProduct',
-      'product': this.product.value,
-      'newOwner': this.newOwner.value,
+      'product': 'resource:com.food.dna.Product#' + this.product.value,
+      'newOwner': 'resource:com.food.dna.Business#' + this.newOwner.value,
       'transactionId': this.transactionId.value,
       'timestamp': this.timestamp.value
     };
