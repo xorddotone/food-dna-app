@@ -24,7 +24,7 @@ function getTarget() {
         const restServerURL = process.env.REST_SERVER_URL;
         return restServerURL;
     }
-    return 'http://34.67.194.218:3000';
+    return 'http://35.225.215.95:3000';
 }
 
 const target = getTarget();
